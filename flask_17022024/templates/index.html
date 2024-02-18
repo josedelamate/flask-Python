@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+
+{% block body %}
+<button class="w-min bg-blue-900 text-1xl p-1 rounded mx-5 my-5 text-white">
+    <a href="/cadastro">
+        Adicionar
+    </a>
+</button>
+<div class="px-5 text-xl flex flex-row bg-blue-500 m-10 border-solid border-2">
+    <ul class="mx-auto ">
+        <li class="border-dashed">Numero</li>
+    </ul>
+    <ul class="mx-auto">
+        <li>Nome</li>
+    </ul>
+    <ul class="mx-auto">
+        <li>Data</li>
+    </ul>
+    <ul class="mx-auto">
+        <li>Descrição</li>
+    </ul>
+</div>
+    
+{% endblock %}

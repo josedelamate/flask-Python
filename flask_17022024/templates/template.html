@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}Document{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    {% block head%}{% endblock %}
+</head>
+<body class="bg-sky-300">
+    <div class="bg-teal-300 w-4/5 mx-auto flex flex-col ">
+        <h1 class="mx-auto text-3xl py-5">To Do List</h1>
+        {% block body %}{% endblock %}
+    </div>
+    
+</body>
+</html>

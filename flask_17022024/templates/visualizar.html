@@ -1,0 +1,18 @@
+{% extends "template.html" %}
+{% block title %}
+..:: Visualizar Contatos ::..
+{% endblock %} 
+{% block body %} 
+<div>
+<h1>Visualização de Contatos!</h1>
+<hr>
+{% if lista_nomes %}
+    <ul>
+    {% for item in lista_nomes %}
+        <li>{{ item }}</li>
+    {% endfor %} 
+    </ul>   
+{% endif %}       
+<hr>
+</div>
+{% endblock %}
